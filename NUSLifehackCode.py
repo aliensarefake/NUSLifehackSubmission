@@ -24,7 +24,7 @@ orderDict = { "Unagi": 5,      "Chicken katsu": 4,     "Pork katsu": 4.50,
 
 def start_command(update, context):
     update.message.reply_text("Welcome to SaveTheEarth SG box, where our primary aim is to reduce food wastage and help our lovely food court vendors cut their cost! \n")
-    update.message.reply_text("Here are the commands which you can use: \n\n /ordernow: select the dish you want to order \n\n /myorders:  order(s) which you have already placed \n\n /balance: to check your coin balance \n\n /vouchers: to check for any available vouchers to purchase \n\n If you're unsure of the command at any point in time, simply press /start and we will display this message again!")
+    update.message.reply_text("Here are the commands which you can use: \n\n /ordernow: select the dish you want to order \n\n /myorders:  order(s) which you have already placed \n\n /balance: to check your coin balance \n\n /vouchers: to check for any available vouchers to purchase \n\n Note that for every $1 spent, 2 coins will be accredited to your account! \n\n If you're unsure of the command at any point in time, simply press /start and we will display this message again!")
  
 
 def user_responses(text):
@@ -135,11 +135,11 @@ def sendOrder(update, context):
 
 def balance(update, context):
     global my_balance
-    my_balance = math.floor(totalCost * 5)
+    my_balance = math.floor(totalCost * 2)
     update.message.reply_text(f"Your current coin balance is {my_balance}.")
     
 def vouchers(update, context):
-    update.message.reply_text(f"Your current coin balance is {my_balance}! \nExchange Rate: 1 coin = $0.05 discount \nEnter the number of coins you wish to exchange!")
+    update.message.reply_text(f"Your current coin balance is {my_balance}! \nExchange Rate: coin = $0.05 discount \nEnter the number of coins you wish to exchange!")
     
     
 def checkcoins(update, context):
@@ -183,7 +183,7 @@ updater.start_polling()
 updater.idle()
 
 
-# In[ ]:
+
 
 
 
