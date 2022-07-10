@@ -1,5 +1,6 @@
 # NUSLifehackSubmission
 This is my group's code for NUS Lifehack 2022
+
 Telegram Bot Name: @SaveTheEarthbot (https://t.me/SaveTheEarthbot)
 
 Our ideal solution is to use a Telegram Bot for pre-ordering of food in canteen stalls starting from schools. Users can key in their choice of canteen, specific stalls, and preorder their desired food whenever they want, and submit their order to the vendors. The vendors will be informed in advance how much food to prepare for a particular day and avoid cooking too much food which is wasted eventually. A 30-minute collection time slot is allocated based on users' choice of time to minimize crowd levels when picking up their orders. 
